@@ -1,14 +1,7 @@
 import './StatefulHello.css'
+import Props from './Props'
+import State from './State'
 import * as React from 'react';
-
-export interface Props {
-  name: string;
-  enthusiasmLevel?: number;
-}
-
-interface State {
-  currentEnthusiasm: number;
-}
 
 class StatefulHello extends React.Component<Props, State> {
   constructor(props: Props) {
