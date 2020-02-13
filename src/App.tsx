@@ -10,6 +10,7 @@ import LoginControl from './components/LoginControl';
 import NumberList from './components/List';
 import Blog from './components/Blog';
 import NameForm from './components/NameForm';
+import TempCalculator from './components/TempCalculator';
 
 const Title: React.FunctionComponent<{ title: string }> = ({
   children,
@@ -47,6 +48,7 @@ const App: React.FunctionComponent = () => {
         <NumberList numbers={numbers}/>
         <Blog posts={posts}/>
         <NameForm />
+        <TempCalculator />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
