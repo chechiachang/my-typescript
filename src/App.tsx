@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import StatefulHello from './components/StatefulHello';
 import Clock from './components/Clock';
+import Toggle from './components/Toggle';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <header className="App-header">
         <StatefulHello name="TypeScript" enthusiasmLevel={10} />
         <Clock />
+        <Toggle />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

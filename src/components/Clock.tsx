@@ -18,7 +18,7 @@ class Clock extends React.Component<Props, State> {
   componentDidMount() {
   }
 
-  ComponentWillUnmount() {
+  componentWillUnmount() {
   }
 
 
