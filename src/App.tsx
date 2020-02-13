@@ -7,6 +7,8 @@ import Toggle from './components/Toggle';
 import Game from './components/TicTacToe';
 import Greeting from './components/Greeting';
 import LoginControl from './components/LoginControl';
+import NumberList from './components/List';
+import Blog from './components/Blog';
 
 const Title: React.FunctionComponent<{ title: string }> = ({
   children,
@@ -22,6 +24,13 @@ const NewTitle: React.FunctionComponent<{ title: string}> = ({
   );
 }
 
+const numbers = [1,2,3,4,5];
+const posts = [
+  {id:"000", title:"title123", content:"content456"},
+  {id:"000", title:"title123", content:"content456"},
+  {id:"000", title:"title123", content:"content456"}
+]
+
 const App: React.FunctionComponent = () => {
   return (
     <div className="App">
@@ -34,6 +43,8 @@ const App: React.FunctionComponent = () => {
         <Game />
         <Greeting isLoggedIn={false} />
         <LoginControl />
+        <NumberList numbers={numbers}/>
+        <Blog posts={posts}/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
