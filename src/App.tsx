@@ -5,15 +5,35 @@ import StatefulHello from './components/StatefulHello';
 import Clock from './components/Clock';
 import Toggle from './components/Toggle';
 import Game from './components/TicTacToe';
+import Greeting from './components/Greeting';
+import LoginControl from './components/LoginControl';
 
-const App = () => {
+const Title: React.FunctionComponent<{ title: string }> = ({
+  children,
+  title
+}) => <div title={title}>{children}</div>;
+
+const NewTitle: React.FunctionComponent<{ title: string}> = ({
+  children,
+  title
+}) => {
+  return (
+    <div title={title}>{children}</div>
+  );
+}
+
+const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <header className="App-header">
         <StatefulHello name="TypeScript" enthusiasmLevel={10} />
         <Clock />
         <Toggle />
+        <Title title="Hello World" children="Hello?"/>
+        <NewTitle title="Hello World" children="Hello?"/>
         <Game />
+        <Greeting isLoggedIn={false} />
+        <LoginControl />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
