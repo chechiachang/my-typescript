@@ -4,6 +4,7 @@ import './App.css';
 import StatefulHello from './components/StatefulHello';
 import Clock from './components/Clock';
 import Toggle from './components/Toggle';
+import Game from './components/TicTacToe';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <StatefulHello name="TypeScript" enthusiasmLevel={10} />
         <Clock />
         <Toggle />
+        <Game />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
